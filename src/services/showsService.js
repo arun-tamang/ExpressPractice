@@ -1,6 +1,9 @@
-import axiosInstance from '../utils/axiosInstance';
+import axiosInstance from '../utils/apiAxiosInstance';
+import { fakeShowsData } from '../constants/fakeDatas';
 
-export function getShows() {
-  console.log('get shows service called');
-  return 'here are your shows';
+export async function getShows() {
+  // let axiosResponse = await axiosInstance.get('/api/nowshowinginfo');
+  // console.log('axiosResponse', axiosResponse.data);
+  // return axiosResponse.data;
+  return fakeShowsData;
 }

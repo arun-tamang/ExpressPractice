@@ -3,7 +3,7 @@ import winston from 'winston';
 import 'winston-daily-rotate-file';
 import appConfig from '../config/appConfig';
 
-const { logDir, logLevel } = appConfig;
+const { dir: logDir, level: logLevel } = appConfig.logging;
 
 const tsFormat = () => new Date().toISOString();
 

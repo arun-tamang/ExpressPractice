@@ -1,0 +1,41 @@
+2018-03-21T14:20:10.535Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:20:19.205Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:21:38.057Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:22:55.133Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:23:48.723Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:24:19.936Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:24:39.442Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:25:48.807Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:26:09.214Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:26:21.168Z - error:  TypeError: showsService.getShows(...).then is not a function
+    at router.get (/media/arun/local disk3/Amnil/NodeTests/expressApp/src/controllers/showsController.js:10:6)
+    at Layer.handle [as handle_request] (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/layer.js:95:5)
+    at next (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/layer.js:95:5)
+    at /media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/index.js:335:12)
+    at next (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/index.js:174:3)
+    at router (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/express/lib/router/index.js:47:12)
+2018-03-21T14:27:40.846Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:30:56.302Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:30:58.799Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:32:18.798Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:33:26.762Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:35:58.477Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:41:47.756Z - error:  Error: connect ETIMEDOUT 124.41.240.154:9803
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+2018-03-21T14:43:57.791Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:48:28.566Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:48:36.719Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:48:47.728Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T14:56:02.184Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:00:48.449Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:01:52.207Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:02:01.557Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:02:38.521Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:02:47.870Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T15:03:47.752Z - info: Server started at http://127.0.0.1:8848
