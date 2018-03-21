@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import apiRoutes from './apiRoutes';
-// import webRoutes from './webRoutes';
+import webRoutes from './webRoutes';
 
 const router = Router();
 
@@ -9,6 +9,6 @@ const router = Router();
 router.use('/api', apiRoutes);
 
 // Load web routes
-// router.use('/',webRoutes);
+router.use('/',webRoutes);
 
 export default router;
