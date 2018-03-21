@@ -1,0 +1,8 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "Test app in express",
+  "main": "index.js",
+  "author": "arun",
+  "license": "MIT"
+}
