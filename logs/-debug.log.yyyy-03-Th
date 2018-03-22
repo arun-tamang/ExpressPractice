@@ -1,0 +1,56 @@
+2018-03-21T22:51:21.029Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T22:53:01.036Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T22:53:48.639Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:00:47.536Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:04:03.826Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:26:26.633Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:56:28.132Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:56:33.728Z - error:  ReferenceError: Html is not defined
+    at showsService.getShows.then.data (/media/arun/local disk3/Amnil/NodeTests/expressApp/src/server/controllers/webControllers/showsController.js:20:11)
+    at <anonymous>
+2018-03-21T23:57:25.804Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:57:45.661Z - info: Server started at http://127.0.0.1:8848
+2018-03-21T23:57:46.314Z - error:  ReferenceError: App is not defined
+    at showsService.getShows.then.data (/media/arun/local disk3/Amnil/NodeTests/expressApp/src/server/controllers/webControllers/showsController.js:18:36)
+    at <anonymous>
+2018-03-21T23:58:18.685Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:01:51.689Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:01:55.639Z - error:  Invariant Violation: Objects are not valid as a React child (found: object with keys {}). If you meant to render a collection of children, use an array instead.
+    in h2
+    in div
+    in Shows
+    at invariant (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/fbjs/lib/invariant.js:42:15)
+    at traverseAllChildrenImpl (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react/cjs/react.development.js:805:7)
+    at traverseAllChildrenImpl (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react/cjs/react.development.js:778:23)
+    at traverseAllChildren (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react/cjs/react.development.js:833:10)
+    at mapIntoWithKeyPrefixInternal (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react/cjs/react.development.js:909:3)
+    at toArray (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react/cjs/react.development.js:956:3)
+    at ReactDOMServerRenderer.renderDOM (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2473:18)
+    at ReactDOMServerRenderer.render (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2298:21)
+    at ReactDOMServerRenderer.read (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2234:19)
+    at renderToString (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2501:25)
+2018-03-22T00:03:02.149Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:03:59.332Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:27:58.911Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:32:31.496Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:42:14.873Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:48:59.838Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T00:58:02.657Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:08:21.768Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:10:29.942Z - error:  TypeError: Cannot read property 'map' of undefined
+    at Calendar (/media/arun/local disk3/Amnil/NodeTests/expressApp/src/client/components/shows/Calendar.jsx:9:27)
+    at resolve (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2102:14)
+    at ReactDOMServerRenderer.render (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2260:22)
+    at ReactDOMServerRenderer.read (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2234:19)
+    at renderToString (/media/arun/local disk3/Amnil/NodeTests/expressApp/node_modules/react-dom/cjs/react-dom-server.node.development.js:2501:25)
+    at showsService.getShows.then.data (/media/arun/local disk3/Amnil/NodeTests/expressApp/src/server/controllers/webControllers/showsController.js:18:20)
+    at <anonymous>
+2018-03-22T01:11:12.822Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:20:14.176Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:47:16.902Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:50:09.319Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:56:48.973Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T01:57:20.254Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T02:03:47.389Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T02:04:46.186Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T02:11:07.389Z - info: Server started at http://127.0.0.1:8848
