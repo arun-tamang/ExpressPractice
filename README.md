@@ -11,7 +11,10 @@ npm install or yarn
 
 Usage
 ---
- 
+
+First change .env.example to .env and configure it as you wish.
+
+
 Start the development server with this command:
  
 ```
