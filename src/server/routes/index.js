@@ -8,7 +8,7 @@ const router = Router();
 // Load api routes
 router.use('/api', apiRoutes);
 
-// Load web routes
-router.use('/',webRoutes);
+// Load client (or web) routes
+router.use('/', webRoutes);
 
 export default router;

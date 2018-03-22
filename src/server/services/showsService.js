@@ -1,8 +1,10 @@
 import axiosInstance from '../utils/apiAxiosInstance';
-// import { fakeShowsData } from '../constants/fakeDatas';
+import Boom from 'boom';
 
 export async function getShows() {
   let axiosResponse = await axiosInstance.get('/api/nowshowinginfo');
-  return axiosResponse.data;
-  // return fakeShowsData;
+  if (axiosResponse && axiosResponse.data) {
+    return axiosResponse.data;
+  }
+  throw Boom.notFound();
 }

@@ -1,7 +1,5 @@
 var path = require('path');
-const webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const autoprefixer = require("autoprefixer");
+const webpack = require('webpack');
 
 var BUILD_DIR = path.resolve(__dirname, './public');
 var CLIENT_APP_DIR = path.resolve(__dirname, './src/client');
@@ -10,43 +8,25 @@ const browserConfig = {
   entry: CLIENT_APP_DIR + '/index.js',
   output: {
     path: __dirname,
-    filename: "./public/bundle.js"
+    filename: './public/bundle.js',
+    publicPath: '/'
   },
-  devtool: "cheap-module-source-map",
   module: {
     rules: [
-      {
-        test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: "file-loader",
-        options: {
-          name: "public/media/[name].[ext]",
-          publicPath: url => url.replace(/public/, "")
-        }
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: "css-loader",
-              options: { importLoaders: 1 }
-            },
-            {
-              loader: "postcss-loader",
-              options: { plugins: [autoprefixer()] }
-            }
-          ]
-        })
-      },
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       {
         test: /js$/,
         exclude: /(node_modules)/,
+        use: 'babel-loader'
       }
     ]
   },
+  node: {
+    fs: "empty"
+  },
   plugins: [
-    new ExtractTextPlugin({
-      filename: "public/css/[name].css"
+    new webpack.DefinePlugin({
+      __isBrowser__: "true"
     })
   ]
 };
@@ -54,39 +34,32 @@ const browserConfig = {
 var SERVER_APP_DIR = path.resolve(__dirname, './src/server');
 const serverConfig = {
   entry: SERVER_APP_DIR + '/index.js',
-  target: "node",
+  target: 'node',
   output: {
     path: __dirname,
-    filename: "server.js",
-    libraryTarget: "commonjs2"
+    filename: 'server.js',
   },
-  devtool: "cheap-module-source-map",
   module: {
     rules: [
       {
-        test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-        loader: "file-loader",
-        options: {
-          name: "public/media/[name].[ext]",
-          publicPath: url => url.replace(/public/, ""),
-          emit: false
-        }
-      },
-      {
         test: /\.css$/,
-        use: [
-          {
-            loader: "css-loader/locals"
-          }
-        ]
+        use: ['css-loader']
       },
       {
         test: /js$/,
         exclude: /(node_modules)/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
       }
     ]
-  }
+  },
+  node: {
+    fs: "empty"
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      __isBrowser__: "false"
+    })
+  ]
 };
 
 module.exports = [browserConfig, serverConfig];

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import winston from 'winston';
-// import 'winston-daily-rotate-file';
+import 'winston-daily-rotate-file';
+
 import appConfig from '../config/appConfig';
 
 const { dir: logDir, level: logLevel } = appConfig.logging;
@@ -19,6 +20,15 @@ const logger = new winston.Logger({
       timestamp: tsFormat,
       colorize: true,
       level: 'info'
+    }),
+    new winston.transports.DailyRotateFile({
+      filename: `${logDir}/-${logLevel}.log`,
+      timestamp: tsFormat,
+      datePattern: 'yyyy-MM-dd',
+      zippedArchive: true,
+      maxDays: 30,
+      prepend: true,
+      level: logLevel
     })
   ]
 });

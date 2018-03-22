@@ -8,7 +8,6 @@ router.get('/', (req, res, next) => {
   showsService
     .getShows()
     .then(data => {
-      // res.json({data})
       res.status(HttpStatus.OK).json(data);
     })
     .catch(err => next(err));

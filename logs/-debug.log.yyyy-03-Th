@@ -54,3 +54,20 @@
 2018-03-22T02:03:47.389Z - info: Server started at http://127.0.0.1:8848
 2018-03-22T02:04:46.186Z - info: Server started at http://127.0.0.1:8848
 2018-03-22T02:11:07.389Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:10:14.357Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:24:45.828Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:24:58.051Z - error:  Error: Not Found
+    at Object.t.getShows (/media/arun/local disk3/Amnil/NodeTests/expressApp/server.js:121:225216)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-03-22T14:29:10.318Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:34:14.360Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:34:37.245Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:34:38.911Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:35:52.826Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:36:06.220Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:36:24.323Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:37:52.029Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:39:59.976Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:40:07.598Z - info: Server started at http://127.0.0.1:8848
+2018-03-22T14:40:08.547Z - info: Server started at http://127.0.0.1:8848

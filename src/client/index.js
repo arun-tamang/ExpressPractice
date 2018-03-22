@@ -1,10 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import { hydrate } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import styles from './styles.css';
+import App from '../shared/components/App';
+import '../shared/styles.css'
 
-ReactDOM.render(
-  <App />,
+hydrate(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );

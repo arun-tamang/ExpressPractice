@@ -4,7 +4,6 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import express from 'express';
 import bodyParser from 'body-parser';
-// import favicon from 'serve-favicon';
 
 import routes from './routes';
 import logger from './utils/logger';
@@ -24,14 +23,13 @@ app.set('port', appPort);
 app.locals.title = appName;
 app.locals.version = appVersion;
 
-// app.use(favicon(path.join(__dirname, '/../public', 'favicon.ico')));
 app.use(cors());
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Everything in the public folder is served as static content
+// Serve everything in public directory as static content
 app.use(express.static("public"));
 
 // API Routes
