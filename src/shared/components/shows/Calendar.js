@@ -1,6 +1,5 @@
 import React from 'react';
 import BigCalendar from 'react-big-calendar';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 
 BigCalendar.momentLocalizer(moment);
@@ -16,7 +15,7 @@ const Calendar = (props) => {
   ) : [];
   return (
     <div className="calendar-container">
-      hello from calendar
+      Your Events
       <BigCalendar
         events={shows}
         step={15}
