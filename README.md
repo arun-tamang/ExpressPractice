@@ -33,7 +33,7 @@ Run the built server with following command:
 npm run serve or yarn serve
 ```
 
-To monitor server only with nodemon without webpack run the following.(Note: Don't import css inside server folder or you'll need webpack)
+To monitor server only with nodemon without webpack run the following.(Note: Don't import css inside server folder or you'll need webpack. Import css in client folder.)
 
 ```
 npm run serve:dev or yarn serve:dev
