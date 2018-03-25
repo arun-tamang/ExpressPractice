@@ -1,5 +1,15 @@
 var path = require('path');
 const webpack = require('webpack');
+var fs = require('fs');
+
+var nodeModules = {};
+fs.readdirSync('node_modules')
+  .filter(function (x) {
+    return ['.bin'].indexOf(x) === -1;
+  })
+  .forEach(function (mod) {
+    nodeModules[mod] = 'commonjs ' + mod;
+  });
 
 var BUILD_DIR = path.resolve(__dirname, './public');
 var CLIENT_APP_DIR = path.resolve(__dirname, './src/client');
@@ -39,6 +49,7 @@ const serverConfig = {
     path: __dirname,
     filename: 'server.js',
   },
+  externals: nodeModules,
   module: {
     rules: [
       {
