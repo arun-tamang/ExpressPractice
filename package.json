@@ -46,6 +46,7 @@
   "scripts": {
     "build": "webpack",
     "serve": "node server.js",
-    "start:dev": "webpack -w & nodemon server.js"
+    "start:dev": "webpack -w & nodemon server.js",
+    "serve:dev": "nodemon --watch .env --watch src/server --exec babel-node src/server --source-maps"
   }
 }
